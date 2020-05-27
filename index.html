@@ -3,62 +3,213 @@
     <head>
         <meta charset="UTF-8" />
         <title>Run Buddy</title>
+        <link rel="stylesheet" href="./style.css" />
     </head>
     <!--navigation-->
     <header>
-    <h1>
+      <h1>
         <a href="/">RUN BUDDY</a>
-    </h1>
-    <nav>
-        <!-- Unordered list element -->
-<ul>
-    <!-- List item element-->
-    <li>
-      <!-- Anchor element -->
-      <a href="#what-we-do">What We Do</a>
-    </li>
-    <li>
-      <a href="#what-you-do">What You Do</a>
-    </li>
-    <li>
-      <a href="#your-trainers">Your Trainers</a>
-    </li>
-    <li>
-      <a href="#reach-out">Reach Out</a>
-    </li>
-  </ul>
-    </nav>
+      </h1>
+        <nav>
+              <!-- Unordered list element -->
+        <ul>
+              <!-- List item element-->
+          <li>
+              <!-- Anchor element -->
+            <a href="#what-we-do">What We Do</a>
+          </li>
+    
+          <li>
+            <a href="#what-you-do">What You Do</a>
+          </li>
+    
+          <li>
+            <a href="#your-trainers">Your Trainers</a>
+          </li>
+    
+          <li>
+            <a href="#reach-out">Reach Out</a>
+          </li>
+      </ul>
+        </nav>
     </header>
 
     <!--hero/jumbotron-->
-    <section>
+    <section class="hero">
+        <div class="hero-form">
+            <h3>Get Started Today</h3>
+            <p>Fill out this form and one of our trainers will schedule a consult</p>
+              <!-- Add form element -->
+              <form>
+                <label for="name">Enter full name:</label>
+                <input type="text" placeholder="Your Name" name="name" id="name" class="form-input">
+                
+                <label for="email">Enter email address:</label>
+                <input type="text" placeholder="Email Address" name="email" id="email" class="form-input">
+                
+                <label for="phone">Enter a telephone number:</label>
+                <input type="text" placeholder="Phone Number" name="phone" id="phone" class="form-input">
+                <p>
+                  Have you worked out with a trainer before?
+                  <input type="radio" name="trainer-confirm" id="trainer-yes" />
+                  <label for="trainer-yes">Yes</label>
+                  <input type="radio" name="trainer-confirm" id="trainer-no" />
+                  <label for="trainer-no">No</label>
+                </p>
+                <p>
+                  <label for="checkbox" >
+                    I acknowledge that I am at least 18 years of age.
+                  </label>
+                  <input type="checkbox" name="age-confirm" id="checkbox" />
+                </p>
+                <button type="submit">
+                  Get running!
+                </button>
+              </form>
+            </div>
+          </section>
+          <!-- end hero -->
+   
+       
+<!-- "what we do" section -->
+<section id="what-we-do"  class="intro">
+    <h2 class="section-title primary-border">What We Do</h2>
+    <p>
+      butcher selfies chambray shabby chic gentrify readymade yr Echo Park XOXO Tumblr normcore Banksy direct trade Blue Bottle chillwave you probably haven't heard of them single-origin coffee Vice fanny pack fixie Odd Future Austin fingerstache pickled twee synth Wes Anderson Thundercats viral bitters flannel meggings narwhal Marfa Schlitz sustainable Intelligentsia umami deep v craft
+    </p>
+  </section>
 
-    </section>
-
-    <!--"What we do" section-->
-   <section>
-       <h2>What We Do</h2>
-   </section>
-
-   <!--"What You Do" Section-->
-   <section>
-       <h2>What You Do</h2>
-   </section>
+<!-- "what you do" section -->
+<section id="what-you-do" class="steps">
+    <h2 class="section-title secondary-border">What You Do</h2> 
+  
+    <div>
+      <!-- insert this img element -->
+      <img src="./images/step-1.svg" alt="" />
+      <h3>Step 1: <span>Fill Out the Form Above.</span></h3>
+      <p>You're already here, so why not?</p>
+    </div>
+  
+    <div>
+      <img src="./images/step-2.svg" alt="" />
+      <h3>Step 2: Consult with One of Our Trainers.</h3>
+      <p>Are you here to build muscle, lose weight, or just feel good?</p>
+    </div>
+  
+    <div>
+      <img src="./images/step-3.svg" alt="" />
+      <h3>Step 3: Get Running.</h3>
+      <p>Hit the ground running (literally) once your trainer lays out your plan.</p>
+    </div>
+  
+    <div>
+      <img src="./images/step-4.svg" alt="" />
+      <h3>Step 4: See Results.</h3>
+      <p>Bi-weekly checkins with your trainer will keep you focused</p>
+    </div>
+  </section>
 
    <!--"meet the trainer"Section-->
-   <section>
-       <h2>Meet The Trainers</h2>
+
+   <section id="your-trainers" class="trainers">
+       <h2 class="section-title primary-border">Meet The Trainers</h2>
    </section>
-   
+  <!--the <article> is a newer HTML5 semantic element that was introduced to encapsulate content that works on its own in a page, 
+    meaning that all the content inside the <article> element is related to one another and nothing outside the element.-->
+
+  <!--As you'll remember, in order to make web content accessible to all users, every image should have an alt value.
+  Here are some guidelines for alt values:
+  -They must describe the image in less than 140 characters.
+  -They should convey the content and purpose of the image.
+  -They should not begin with "image of…" or "graph of…", as screen readers already provide that context.-->    
+
+   <!-- First trainer bio -->
+      <article class="trainer">
+          <img src="./images/trainer-1.jpg" alt="Arron Stephens in his workout clothes, ready to pump iron" />
+              <div class="trainer-bio text-left">
+              <h3>Arron Stephens</h3>
+              <h4>Speed / Strength</h4>
+        <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed
+        itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
+        </p>
+            </div>
+      </article>
+
+      <!-- second trainer bio -->
+    <article class="trainer">
+      <div class="trainer-bio text-right">
+          <h3>Joanna Gill</h3>
+          <h4>Endurance</h4>
+        <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed
+      itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
+        </p>
+      </div>
+          <img src="./images/trainer-2.jpg" alt="Joanna Gill cooling off after a workout" />
+    </article>
+
+  <!-- third trainer bio -->
+  <article class="trainer">
+    <img src="./images/trainer-3.jpg" alt="Harry Smith wearing a headband and lifting comically small pink weights" />
+        <div class="trainer-bio text-left">
+        <h3>Harry "the Headband" Smith</h3>
+        <h4>Strength</h4>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed
+        itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
+      </p>
+    </div>
+  </article>
+
+
    <!--reach out section-->
-   <selection>
-       <h2>Reach Out</h2>
-   </selection>
+
+  <!--Let's unpack the attributes for the <iframe>:
+
+  - src: This is the most important attribute, because without it, nothing will render. The src value is a URL path linking to the external website content that will be embedded. This should be familiar because it's the same attribute used in the <img> element.
+  - frameborder: By default, the browser will render an <iframe> element with a thin border. This attribute allows us to override that, effectively removing the border.
+  - style: This is an inline style to set no border, for newer browsers.
+  - allowfullscreen: Some attributes are properties that can be turned on by simply adding the attribute. The allowfullscreen attribute offers a link to view the map on a new page in full-screen mode. Notice how allowfullscreen doesn't have any value assignment. Another popular attribute that doesn't have a value assignment is checked for a checkbox input element.-->
+
+  <section id="reach-out" class="contact">
+        <h2 class="section-title secondary-border">Reach Out</h2>
+           <div class="contact-info">
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.996472251234!2d-121.89430298391144!3d37.31891124602671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808e3352c8dd3651%3A0x35589decbc11fc7f!2s381%20Jerome%20St%2C%20San%20Jose%2C%20CA%2095125!5e0!3m2!1sen!2sus!4v1590280520352!5m2!1sen!2sus"
+                frameborder="0"
+                height="400"
+                width="400"
+                style="border:0"
+                allowfullscreen
+                >
+                </iframe>
+
+                <h3>Run Buddy</h3>
+                    <p>
+                    Any questions or concerns before signing up?
+                    <br />
+                     Let us know and we'll be happy to talk to you!
+                    </p>
+        
+                    <address>
+                    381 Jerome ST <br/>
+                    San Jose, Ca <br/>
+                    95125<br />
+                    P: 555.RUN.BUDZ (555.786.2839)<br/>
+                    E: <a href="mailto:hani.ghaderi@me.com">info@runbuddy.io</a>
+                    </address>
+            </div>
+          </section>
     <body>
-        <h1>RUN BUDDY</h1>
+      
     </body>
     <!--footer-->
     <footer>
-        <h1>❤️ Made with love by Run Buddy.</h1>
-      </footer>
+        <h2>❤️ Made with love by Run Buddy.</h2>
+        <div>
+            <a href="#">Read Our Privacy Policy</a><br />
+            &copy; 2019 Run Buddy, Inc.
+          </div>
+    </footer>
 </html>
